@@ -1,0 +1,24 @@
+[project]
+name = "diabetes-prediction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kabir Olawale Mohammed", email = "121871052+kabiromohd@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "flask>=3.1.3",
+    "gunicorn>=26.2.0",
+    "joblib>=1.6.0",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+diabetes-prediction = "diabetes_prediction:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
